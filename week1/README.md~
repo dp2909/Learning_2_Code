@@ -1,0 +1,30 @@
+# Week 1 learning
+
+For week1, you will be introduced to a few new topics. The first that you'll have noticed right away is the concept of branching in git.
+
+ - Branching is a way to organize work in git repositories so that while we are developing, we are not interfering with production code!
+ - Branching seems weird, because when we switch to a new branch, all the files in our repository are updated to reflect the current branch.
+ - Some things we shouldn't do:
+   - work directly in the main branch (also referred to as the master branch, this is a very recent change due to the negative connotations of master)
+   - Switch to a new branch if we have uncommitted work (in fact, git will complain about this)
+   
+ - Below are some common branching commands:
+   - see all branches as well as the one you are currently on: `git branch`
+   - create and switch to a new branch: `git checkout -b <branchname>`
+   - switch to a new branch that already exists: `git checkout <branchname>`
+   - There are many more, but these should suffice for this week's work
+
+## Work for week 1
+
+Git has the concept of a remote and local state. The local state in our case is what is on the server in your home directory. Making changes to the local state does not make changes to the remote state unless you commit them and push them (which you have had some practice with in the README).
+
+In my local copy, I have created a branch called `week1` by doing the following from inside the `Learning_2_Code` directory:
+  - `git checkout -b week1`
+
+- From the above, we know this both created and changed to the week1 branch. Immediately when we change, it will be "even" with the state of the main branch.
+- When we make any change (add a new file, change an existing file, delete a file), the state of our new branch will be different than our main branch.
+- We then commit these changes, and push them to the remote respository on github.
+- This is how 2 people can work on projects at the same time. In this example, I am committing changes that you do not have, so you will have `pull` them to your local copy:
+
+Exercise 1:
+
